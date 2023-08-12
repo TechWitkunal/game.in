@@ -1,0 +1,254 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+html{
+    font-size: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+li {
+    list-style: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+small{
+    font-size: 0.76rem;
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+.d\:flex {
+    display: flex;
+    align-items: center;
+}
+
+.d\:column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.d\:justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d\:justify-space-bt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.box-shd {
+    box-shadow: var(--box-shadow);
+}
+
+.inner-shd {
+    box-shadow: inset 0 2px 64px -26px rgba(0,0,0,.35);
+}
+
+.card-b-r {
+    border-radius: var(--border-radius-2);
+}
+
+.mar-h\:1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mar-h\:2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.mar-h\:3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.mar-h\:5 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.mar-v\:1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mar-v\:1_5 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mar-v\:2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mar-v\:3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.padd-h\:1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padd-h\:2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.padd-h\:3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.padd-v\:1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.padd-v\:1_5 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.padd-v\:2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padd-v\:3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.button,
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-black {
+    color: var(--color-dark);
+}
+
+.text-black-light {
+    color: var(--color-dark-variant);
+}
+
+.bg-dark {
+    background-color: rgb(17 24 39);
+}
+
+.bg-dark\:hover:hover {
+    transition: 0.3s all ease-in-out;
+    background-color: black;
+}
+
+.bg-grey {
+    background-color: var(--color-light);
+}
+
+.bg-grey\:hover:hover {
+    transition: 0.3s all ease-in-out;
+    background-color: rgba(76, 78, 95, 0.218);
+}
+
+.text-skin-color {
+    color: var(--main-skin-color);
+}
+
+.text-skin-color\:hover:hover {
+    transition: 0.3s all ease-in-out;
+    color: var(--main-skin-color-hover);
+}
+
+.bg-skin-color {
+    background-color: var(--main-skin-color);
+}
+
+.bg-skin-color\:hover:hover {
+    transition: 0.3s all ease-in-out;
+    background-color: var(--main-skin-color-hover);
+}
+
+.bg-skin-color-light {
+    background-color: var(--main-skin-color-light);
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
