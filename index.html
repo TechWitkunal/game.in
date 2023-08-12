@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/basic.css">
+</head>
+
+<body>
+    <!-- start box  -->
+    <div class="start-box padd-h:1 padd-v:1">
+        <header>
+            <span>Tic Tac Toe Game</span>
+        </header>
+        <p>Select which you want to be</p>
+        <div class="d:flex">
+            <button class="button d:justify-center text-white playerX">Player (X)</button>
+            <button class="button d:justify-center text-white playerO">Player (O)</button>
+        </div>
+    </div>
+    <!-- playboard  -->
+    <div class="play-board">
+        <div class="details">
+            <div class="players">
+                <div class="slider"></div>
+                <span class="Xturn">X's Turn</span>
+                <span class="Oturn">O's Turn</span>
+            </div>
+        </div>
+        <div class="boxes">
+            <section>
+                <span class="box1"></span>
+                <span class="box2"></span>
+                <span class="box3"></span>
+            </section>
+            <section>
+                <span class="box4"></span>
+                <span class="box5"></span>
+                <span class="box6"></span>
+            </section>
+            <section>
+                <span class="box7"></span>
+                <span class="box8"></span>
+                <span class="box9"></span>
+            </section>
+        </div>
+    </div>
+    <!-- result box -->
+    <div class="result">
+        <header>
+            <p></p>
+        </header>
+        <div class="option">
+            <button class="button play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1b014621ce.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

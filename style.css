@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #F9629F;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --dark-300-color: #0000006d;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-box, .play-board, .result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-box {
+    background-color: var(--light-color);
+    width: 25rem;
+    /* display: none; */
+    border-radius: 0.7rem;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.start-box.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.start-box header {
+    border-bottom: 1px solid var(--dark-300-color);
+
+    padding: 0.5rem 0px;
+    margin-bottom: 1.2rem;
+}
+
+.start-box header span {
+    font-size: 2rem;
+}
+
+.start-box p {
+    font-size: 1.5rem;
+}
+
+.start-box .d\:flex {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.start-box .button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.start-box .button:hover {
+    transform: scale(0.9);
+}
+
+.play-board {
+    width: 25rem;
+    /* display: none; */
+    border-radius: 0.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.play-board.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.play-board .details .players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--light-color);
+    padding: 1rem;
+
+}
+
+.play-board .details {
+    position: relative;
+}
+
+.play-board .details .slider {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    height: 90%;
+    width: 50%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.play-board .details .players span {
+    /* width: 10rem; */
+    text-align: center;
+    font-size: 1.4rem;
+    /* color: var(--primary-color); */
+    padding: 0rem 2.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+    /* color: var(--light-color); */
+}
+
+.players span:nth-child(2) {
+    color: var(--light-color);
+}
+
+.players span:nth-child(3) {
+    color: var(--primary-color);
+}
+
+.players.active span:nth-child(2) {
+    color: var(--primary-color);
+    z-index: 5;
+}
+
+.players.active span:nth-child(3) {
+    color: var(--light-color);
+    z-index: 5;
+}
+
+.players.active .slider {
+    left: 48%;
+}
+
+.play-board .boxes {
+    margin-top: 1rem;
+}
+
+.play-board section {
+    display: flex;
+    align-items: center;
+}
+
+.play-board section span {
+    background-color: var(--light-color);
+    width: 10rem;
+    height: 7rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    /* font-size: 2.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-board section span i {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+.result {
+    /* display: none; */
+    background-color: var(--light-color);
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.result.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.result header {
+    border-bottom: 1px solid var(--dark-300-color);
+    font-size: 1.5rem;
+}
+
+.result .option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result .button {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 0.2rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.result .button:hover {
+    transform: scale(0.9);
+}
