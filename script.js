@@ -109,6 +109,14 @@ function selectWinner() {
     } else {
         if (getId(1) != "" && getId(2) != "" && getId(3) != "" && getId(4) != "" && getId(5) != "" && getId(6) != "" && getId(7) != "" && getId(8) != "" && getId(9) != "") {
             wonText.innerHTML = `Match get draw`;
+            console.log(playerSign + " win");
+        runBot = false;
+        bot(runBot);
+
+        setTimeout(function () {
+            playBoard.classList.remove("show");
+            resultBox.classList.add("show");
+        }, 700)
         }
     }
     
